@@ -1,0 +1,81 @@
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> pipenv --python 
+Error: Option '--python' requires an argument.
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> Q
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Q' is not defined
+>>> q
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'q' is not defined
+>>> \q
+  File "<stdin>", line 1
+    \q
+SyntaxError: unexpected character after line continuation character
+Use exit() or Ctrl-Z plus Return to exit
+>>>
+KeyboardInterrupt
+>>>
+>>>
+KeyboardInterrupt
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> ^Z
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> pipenv --python 
+Error: Option '--python' requires an argument.
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Creating a virtualenv for this project...
+Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api\Pipfile
+Using C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe (3.11.4) to create virtualenv...
+[ ===] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 359ms
+  creator CPython3Windows(dest=C:\Users\fernando\.virtualenvs\ejemplo1_flask_api-QEYeD8Hb, clear=False, no_vcs_ignore=False, global=False)
+    added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\fernando\.virtualenvs\ejemplo1_flask_api-QEYeD8Hb
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> set PIPENV_VENV_IN_PROJECT=1
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> pipenv shell
+Launching subshell in virtual environment...
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> pipenv install
+Installing dependencies from Pipfile.lock (263aaa)...
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo1_flask_api> python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-563-078
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [07/Oct/2023 17:21:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /swagger HTTP/1.1" 308 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /swagger/ HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /swagger.json HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:22:06] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:23:26] "GET /usuarios HTTP/1.1" 200 -

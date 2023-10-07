@@ -1,0 +1,63 @@
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> set PIPENV_VENV_IN_PROJECT=1
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv shell
+Warning: Python 3.9 was not found on your system...
+Neither 'pyenv' nor 'asdf' could be found to install Python.
+You can specify specific versions of Python with:
+$ pipenv --python path\to\python
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Creating a virtualenv for this project...
+Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api\Pipfile
+Using C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe (3.11.4) to create virtualenv...
+[==  ] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 3472ms
+  creator CPython3Windows(dest=C:\Users\fernando\.virtualenvs\ejemplo3_flask_api-S8sjBacJ, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\fernando\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\fernando\.virtualenvs\ejemplo3_flask_api-S8sjBacJ
+Warning: Your Pipfile requires python_version 3.9, but you are using 3.11.4 (C:\Users\f\.\e\S\python.exe).
+  $ pipenv --rm and rebuilding the virtual environment may resolve the issue.
+  $ pipenv check will surely fail.
+
+
+  PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Creating a virtualenv for this project...
+Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api\Pipfile
+Using C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe (3.11.4) to create virtualenv...
+[==  ] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 3472ms
+  creator CPython3Windows(dest=C:\Users\fernando\.virtualenvs\ejemplo3_flask_api-S8sjBacJ, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\fernando\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\fernando\.virtualenvs\ejemplo3_flask_api-S8sjBacJ
+Warning: Your Pipfile requires python_version 3.9, but you are using 3.11.4 (C:\Users\f\.\e\S\python.exe).
+  $ pipenv --rm and rebuilding the virtual environment may resolve the issue.
+  $ pipenv check will surely fail.
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipevn --rm
+pipevn : El término 'pipevn' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió correctamente el       
+nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ pipevn --rm
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pipevn:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv shell
+Launching subshell in virtual environment...
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv shell
+Shell for C:\Users\fernando\.virtualenvs\ejemplo3_flask_api-S8sjBacJ already activated.
+New shell not activated to avoid nested environments.
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo3_flask_api> pipenv install
+Installing dependencies from Pipfile.lock (7f6664)...
+
+

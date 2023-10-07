@@ -1,0 +1,41 @@
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api\Pipfile
+Using C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe (3.11.4) to create virtualenv...
+[ ===] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 345ms
+  creator CPython3Windows(dest=C:\Users\fernando\.virtualenvs\ejemplo2_flask_api-MoXQ5bC8, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\fernando\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\fernando\.virtualenvs\ejemplo2_flask_api-MoXQ5bC8
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api> set PIPENV_VENV_IN_PROJECT=1
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api>  pipenv shell
+Launching subshell in virtual environment...
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Prueba la nueva tecnología PowerShell multiplataforma https://aka.ms/pscore6
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api> pipenv install
+Installing dependencies from Pipfile.lock (ff4923)...
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api> pipenv install
+Installing dependencies from Pipfile.lock (ff4923)...
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo2_flask_api>  python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 131-106-357
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swagger.json HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:41] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+127.0.0.1 - - [07/Oct/2023 17:31:51] "POST /main/ HTTP/1.1" 200 
