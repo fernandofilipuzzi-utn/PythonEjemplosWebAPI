@@ -1,22 +1,51 @@
-root@debian12vm:/data/NPL/python/ejemplo1_api# aptitude install pipenv
-Se instalarán los siguiente paquetes NUEVOS:      
-  binutils{a}
-root@debian12vm:/data/NPL/python/ejemplo1_api# exit
-exit
-fernando@debian12vm:/data/NPL/python/ejemplo1_api$ ls /usr/bin/py
-py3clean           pydoc3             pygettext3.11      python3.11-config  
-py3compile         pydoc3.11          python3            python3-config     
-py3versions        pygettext3         python3.11
-
-fernando@debian12vm:/data/NPL/python/ejemplo1_api$ pipenv --python /usr/bin/python3.11
+fernando@debian12vm:/data$ cd repos/python/PythonEjemplosWebAPI/
+ejemplo1_flask_api/ ejemplo2_flask_api/ ejemplo3_flask_api/ ejemplo4_django/    .git/               
+fernando@debian12vm:/data$ cd repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/
+fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$ pipenv --python /usr/bin/python3.11
 Creating a virtualenv for this project...
-Pipfile: /data/NPL/python/ejemplo1_api/Pipfile
+Pipfile: /data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/Pipfile
 Using /usr/bin/python3.11 (3.11.2) to create virtualenv...
-⠴ Creating virtual environment...created virtual environment CPython3.11.2.final.0-64 in 403ms
-  creator CPython3Posix(dest=/home/fernando/.local/share/virtualenvs/ejemplo1_api-l7HJqxrj, clear=False, no_vcs_ignore=False, global=False)
+⠸ Creating virtual environment...created virtual environment CPython3.11.2.final.0-64 in 168ms
+  creator CPython3Posix(dest=/home/fernando/.local/share/virtualenvs/ejemplo1_flask_api-wHxUOoqL, clear=False, no_vcs_ignore=False, global=False)
   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/fernando/.local/share/virtualenv)
     added seed packages: pip==23.0.1, setuptools==66.1.1, wheel==0.38.4
   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
 
 ✔ Successfully created virtual environment!
-Virtualenv location: /home/fernando/.local/share/virtualenvs/ejemplo1_api-l7HJqxrj
+Virtualenv location: /home/fernando/.local/share/virtualenvs/ejemplo1_flask_api-wHxUOoqL
+fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$ export PIPENV_VENV_IN_PROJECT=1
+fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$ pipenv shell
+Creating a virtualenv for this project...
+Pipfile: /data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/Pipfile
+Using /usr/bin/python3 (3.11.2) to create virtualenv...
+⠹ Creating virtual environment...created virtual environment CPython3.11.2.final.0-64 in 161ms
+  creator CPython3Posix(dest=/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/.venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/fernando/.local/share/virtualenv)
+    added seed packages: pip==23.0.1, setuptools==66.1.1, wheel==0.38.4
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/.venv
+Launching subshell in virtual environment...
+fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$  . /data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api/.venv/bin/activate
+(ejemplo1_flask_api) fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$ pipenv install
+Installing dependencies from Pipfile.lock (263aaa)...
+(ejemplo1_flask_api) fernando@debian12vm:/data/repos/python/PythonEjemplosWebAPI/ejemplo1_flask_api$ python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 331-192-729
+192.168.1.186 - - [07/Oct/2023 18:22:26] "GET / HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:27] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /swagger HTTP/1.1" 308 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /swagger/ HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+192.168.1.186 - - [07/Oct/2023 18:22:31] "GET /swagger.json HTTP/1.1" 200 -

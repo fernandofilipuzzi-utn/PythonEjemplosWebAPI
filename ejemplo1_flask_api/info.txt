@@ -1,7 +1,7 @@
 
 ==en linux==
 sudo aptitude install pipenv
-pipenv --python /usr/bin/python3.9
+pipenv --python /usr/bin/python3.11
 
 
 ==Inicio sobre la carpeta del proyecto o ejemplo==
