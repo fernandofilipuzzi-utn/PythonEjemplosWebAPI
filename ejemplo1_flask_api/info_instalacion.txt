@@ -1,0 +1,22 @@
+root@debian12vm:/data/NPL/python/ejemplo1_api# aptitude install pipenv
+Se instalarán los siguiente paquetes NUEVOS:      
+  binutils{a}
+root@debian12vm:/data/NPL/python/ejemplo1_api# exit
+exit
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$ ls /usr/bin/py
+py3clean           pydoc3             pygettext3.11      python3.11-config  
+py3compile         pydoc3.11          python3            python3-config     
+py3versions        pygettext3         python3.11
+
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$ pipenv --python /usr/bin/python3.11
+Creating a virtualenv for this project...
+Pipfile: /data/NPL/python/ejemplo1_api/Pipfile
+Using /usr/bin/python3.11 (3.11.2) to create virtualenv...
+⠴ Creating virtual environment...created virtual environment CPython3.11.2.final.0-64 in 403ms
+  creator CPython3Posix(dest=/home/fernando/.local/share/virtualenvs/ejemplo1_api-l7HJqxrj, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/fernando/.local/share/virtualenv)
+    added seed packages: pip==23.0.1, setuptools==66.1.1, wheel==0.38.4
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /home/fernando/.local/share/virtualenvs/ejemplo1_api-l7HJqxrj

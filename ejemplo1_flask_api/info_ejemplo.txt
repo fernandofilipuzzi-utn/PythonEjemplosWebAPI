@@ -1,0 +1,24 @@
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$ export PIPENV_VENV_IN_PROJECT=1
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$ pipenv install
+Creating a virtualenv for this project...
+Pipfile: /data/NPL/python/ejemplo1_api/Pipfile
+Using /usr/bin/python3 (3.11.2) to create virtualenv...
+⠸ Creating virtual environment...created virtual environment CPython3.11.2.final.0-64 in 179ms
+  creator CPython3Posix(dest=/data/NPL/python/ejemplo1_api/.venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/fernando/.local/share/virtualenv)
+    added seed packages: pip==23.0.1, setuptools==66.1.1, wheel==0.38.4
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment!
+Virtualenv location: /data/NPL/python/ejemplo1_api/.venv
+Installing dependencies from Pipfile.lock (263aaa)...
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+
+#proyecto por primera vez
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$ pipenv shell
+Launching subshell in virtual environment...
+fernando@debian12vm:/data/NPL/python/ejemplo1_api$  . /data/NPL/python/ejemplo1_api/.venv/bin/activate
+
+
+

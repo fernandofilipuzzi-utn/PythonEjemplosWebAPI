@@ -1,0 +1,36 @@
+
+==en linux==
+sudo aptitude install pipenv
+pipenv --python /usr/bin/python3.9
+
+
+==Inicio sobre la carpeta del proyecto o ejemplo==
+#pip3 uninstall virtualenv
+export PIPENV_VENV_IN_PROJECT=1
+
+==dependencias al iniciar al crear el proyecto==
+export PIPENV_VENV_IN_PROJECT=1
+pipenv shell
+pipenv install flask 
+pipenv install flask-swagger 
+pipenv install flask-restful-swagger
+pipenv install Jinja2==2.11.3
+pipenv install flasgger
+pipenv graph
+pipenv install flask_restplus
+pipenv install Werkzeug==0.16.1
+
+==corriendo el proyecto==
+pipenv shell
+pipenv run python3.11 app.py
+
+==o==
+
+python app.py
+python.exe -m pip install --upgrade pip
+http://192.168.1.117:5000/swagger/
+
+
+pip install --upgrade markupsafe
+python.exe -m pip install --upgrade pip
+pip install --upgrade jinja2
