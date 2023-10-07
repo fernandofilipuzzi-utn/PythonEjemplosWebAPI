@@ -1,0 +1,33 @@
+pip install flask
+pip install flask-swagger flask-restful-swagger
+pip install --upgrade markupsafe
+python.exe -m pip install --upgrade pip
+pip install --upgrade jinja2
+pip install Jinja2==2.11.3
+python app.py
+
+http://localhost:5000/swagger, y el UI de Swagger se mostrará en http://localhost:5000/api/docs
+
+python.exe -m pip install --upgrade pip
+
+. Puedes probarlo enviando solicitudes HTTP a las rutas correspondientes, por ejemplo, utilizando la herramienta cURL o un cliente API como Postman.
+
+
+pip install pipenv
+pipenv shell
+pipenv install nombre_de_paquete
+pipenv install  flask 
+pipenv install flask-swagger 
+pipenv install flask-restful-swagger
+ Jinja2==2.11.3
+pipenv install flasgger
+
+pipenv graph
+pipenv run python app.py
+
+
+flasgger, flask-restful, jinja2, flask
+
+en linux
+aptitude install pipenv
+
