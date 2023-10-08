@@ -1,4 +1,4 @@
-# user_resource.py
+from flask import jsonify
 from flask_restful import Resource
 
 class UserResource(Resource):
@@ -8,15 +8,11 @@ class UserResource(Resource):
         ---
         responses:
           200:
-            description: Lista de usuarios.
-            schema:
-              type: array
-              items:
-                $ref: '#/definitions/Usuario'
+            description: Lista de usuarios en formato JSON.
         """
-       
         usuarios = [
             {"id": 1, "nombre": "Juan", "apellido": "Pérez"},
             {"id": 2, "nombre": "María", "apellido": "Gómez"}
         ]
-        return usuarios
+        # Devuelve la lista de usuarios como JSON
+        return jsonify(usuarios)
