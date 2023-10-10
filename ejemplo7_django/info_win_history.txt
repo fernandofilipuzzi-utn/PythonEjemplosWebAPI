@@ -1,18 +1,30 @@
-PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo4_django> set PIPENV_VENV_IN_PROJECT=1
-PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo4_django> set PIPENV_VENV_IN_PROJECT=1
-PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo4_django> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django> set PIPENV_VENV_IN_PROJECT=1
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django> mkdir .venv
+
+
+    Directorio: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django
+
+Mode                 LastWriteTime         Length Name                                                                                                               
+----                 -------------         ------ ----                                                                                                               
+d-----         7/10/2023     22:03                .venv                                                                                                              
+
+
+PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django> pipenv --python C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe
 Creating a virtualenv for this project...
-Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo4_django\Pipfile
-[ ===] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 324ms
-  creator CPython3Windows(dest=C:\Users\fernando\.virtualenvs\ejemplo4_django-AEk3DkTY, clear=False, no_vcs_ignore=False, global=False)
+Pipfile: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django\Pipfile
+Using C:\Users\fernando\AppData\Local\Programs\Python\Python311\python.exe (3.11.4) to create virtualenv...
+[=== ] Creating virtual environment...created virtual environment CPython3.11.4.final.0-64 in 309ms
+  creator CPython3Windows(dest=F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django\.venv, clear=False, no_vcs_ignore=False, global=False)
   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\fernando\AppData\Local\pypa\virtualenv)
-    added seed packages: pip==23.2, setuptools==68.0.0, wheel==0.40.0
+    added seed packages: pip==23.2.1, setuptools==68.2.2, wheel==0.41.2
   activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
 
 Successfully created virtual environment!
-Virtualenv location: C:\Users\fernando\.virtualenvs\ejemplo4_django-AEk3DkTY
-Creating a Pipfile for this project...
+Virtualenv location: F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo6_django\.venv
+
+
 PS F:\repos\repos_python\PythonEjemplosWebAPI\ejemplo4_django> pipenv shell
+
 Launching subshell in virtual environment...
 Windows PowerShell
 Copyright (C) Microsoft Corporation. Todos los derechos reservados.
